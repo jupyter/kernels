@@ -1,0 +1,25 @@
+{
+	"type": "object",
+  "required": ["header", "content"],
+  "properties": {
+    "header": {
+      "type": "object",
+      "required": ["msg_type"],
+      "properties": {
+        "msg_type": {
+          "enum": ["kernel_info_reply"]
+        }
+      }
+    },
+    "content": {
+      "type": "object",
+      "required": ["protocol_version"],
+      "properties": {
+        "protocol_version": {
+          "type": "string",
+           "pattern": "^(\\d+)((\\.\\d+){1,2}((-.*)?)?)?$"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "header": {
+    "msg_type": "kernel_info_request"
+  },
+  "content": {
+    "restart": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+	"type": "object",
+  "required": ["header", "content"],
+  "properties": {
+    "header": {
+      "type": "object",
+      "required": ["msg_type"],
+      "properties": {
+        "msg_type": {
+          "enum": ["shutdown_reply"]
+        }
+      }
+    },
+    "content": {
+      "type": "object",
+      "required": ["restart"],
+      "properties": {
+        "restart": {
+          "enum": [false]
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "header": {
+    "msg_type": "shutdown_request"
+  },
+  "content": {
+    "restart": false
+  }
+}
